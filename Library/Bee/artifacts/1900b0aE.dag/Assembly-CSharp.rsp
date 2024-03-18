@@ -357,8 +357,8 @@
 "Assets/2_Script/MarketManager.cs"
 "Assets/2_Script/OverManager.cs"
 "Assets/2_Script/TtileManager.cs"
+"Assets/2_Script/ZombieControl.cs"
 "Assets/Study/Char_recpg.cs"
-"Assets/ZombieControl.cs"
 -langversion:9.0
 
 /deterministic
