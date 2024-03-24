@@ -4,13 +4,15 @@ using UnityEngine;
 
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+// ??? ??? ??? ??
+
 
 public class GamesManager : MonoBehaviour
 {
     public Transform spawnPoint; //sapwnpoint
     public Transform zombie; //a tangible object
     bool is_make_Enemy = true; //making zombie?
-    int MakingNum = 5;
+
     int MakeCount = 0;
     int KillCount = 0;
     public Text txt_StageNum;
@@ -49,7 +51,7 @@ public class GamesManager : MonoBehaviour
     void Rule_Check()
     {
         //Clear Conditions
-        if (KillCount == MakingNum)
+        if (KillCount == MainData.max_enemy)
         {
             NextScene_Market();
         }
@@ -88,7 +90,7 @@ public class GamesManager : MonoBehaviour
 
     void Make_Enemy()
     {
-        if (is_make_Enemy == true && MakeCount < MakingNum)
+        if (is_make_Enemy == true && MakeCount < MainData.max_enemy) // Since we make zombies from zero, the actual number -1
         {
             StartCoroutine("MakeJombie"); // MakeJombie();
         }

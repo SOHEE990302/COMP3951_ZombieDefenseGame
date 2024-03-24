@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 using UnityEngine;
@@ -19,6 +19,9 @@ public class ZombieControl : MonoBehaviour
     GameObject Find_obj; //find object
     Base_Control obj_logic; //conect source
 
+    Animator my_ani;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +30,8 @@ public class ZombieControl : MonoBehaviour
         Find_obj = GameObject.Find("Player_Base");
         obj_logic = Find_obj.GetComponent<Base_Control>(); //??? ?? ?????? ????? ???? ??? ??
         print("Find_obj" + Find_obj.tag);
+        //Obtain information from Zombie's animation and control it in its code
+        my_ani = this.GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
@@ -43,6 +48,7 @@ public class ZombieControl : MonoBehaviour
             myact = ActionType.contact;
             Vector3 curpos = this.transform.position;
             this.transform.position = new Vector3(curpos.x - 0.1f, curpos.y, curpos.z);
+            my_ani.SetTrigger("Cooltime");
         }
     }
     void Enemy_Action()
@@ -51,6 +57,7 @@ public class ZombieControl : MonoBehaviour
         {
             case ActionType.init:
                 myact = ActionType.idle;
+
                 break;
             case ActionType.idle: //zombie idle for 1 second
                 action_time += Time.deltaTime;
@@ -58,6 +65,8 @@ public class ZombieControl : MonoBehaviour
                 {
                     action_time = 0;
                     myact = ActionType.walk;
+                    //So that the animation changes to walk
+                    my_ani.SetTrigger("Walk");
                 }
                 break;
             case ActionType.walk: //zombie walk
@@ -67,6 +76,7 @@ public class ZombieControl : MonoBehaviour
                 {
                     action_time = 0;
                     myact = ActionType.run;
+                    my_ani.SetTrigger("Run");
                 }
                 break;
             case ActionType.run: //zombie run
@@ -77,10 +87,11 @@ public class ZombieControl : MonoBehaviour
                 break;
             case ActionType.attack:
                     action_time += Time.deltaTime;
-                if(action_time >= 1.5f)
+                if(action_time >= 1.1f)
                 {
                     action_time = 0;
                     myact = ActionType.drain;
+                    my_ani.SetBool("is_Attack", false);
                 }
                 break;
             case ActionType.drain:
@@ -95,6 +106,8 @@ public class ZombieControl : MonoBehaviour
                     {
                     action_time = 0;
                     myact = ActionType.attack;
+
+                    my_ani.SetBool("is_Attack", true);
                 }
                 break;
         }

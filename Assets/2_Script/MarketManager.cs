@@ -16,6 +16,7 @@ public class MarketManager : MonoBehaviour
     void Update()
     {
         print("Current Stage: " + MainData.cur_Stage);
+        print("Current Base life" + MainData.m_baselife);
     }
     public void NextSence()
     {

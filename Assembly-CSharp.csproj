@@ -60,15 +60,15 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.21f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Study\EnemyMake.cs" />
     <Compile Include="Assets\2_Script\CamScroll.cs" />
     <Compile Include="Assets\2_Script\ZombieControl.cs" />
     <Compile Include="Assets\2_Script\OverManager.cs" />
-    <Compile Include="Assets\Study\Char_recpg.cs" />
+    <Compile Include="Assets\98_Study\Char_recpg.cs" />
     <Compile Include="Assets\2_Script\TtileManager.cs" />
     <Compile Include="Assets\2_Script\GamesManager.cs" />
     <Compile Include="Assets\2_Script\MarketManager.cs" />
-    <Compile Include="Assets\BaseControl.cs" />
+    <Compile Include="Assets\2_Script\BaseControl.cs" />
+    <Compile Include="Assets\98_Study\EnemyMake.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
