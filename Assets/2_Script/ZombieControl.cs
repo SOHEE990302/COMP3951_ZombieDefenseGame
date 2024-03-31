@@ -1,5 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
+using System.Security.Cryptography.X509Certificates;
 using System.Xml.Serialization;
 using UnityEngine;
 
@@ -21,6 +23,9 @@ public class ZombieControl : MonoBehaviour
 
     Animator my_ani;
 
+    public float m_life; //zombie(monster life)
+    public float matt_power; //zombie attack power
+
 
     // Start is called before the first frame update
     void Start()
@@ -31,7 +36,16 @@ public class ZombieControl : MonoBehaviour
         obj_logic = Find_obj.GetComponent<Base_Control>(); //??? ?? ?????? ????? ???? ??? ??
         print("Find_obj" + Find_obj.tag);
         //Obtain information from Zombie's animation and control it in its code
+        init_Data();
+    }
+
+    void init_Data()
+    {
+        m_life = 1.1f; //zombie health
+        matt_power = 0.6f; //zombie attack power
+
         my_ani = this.GetComponentInChildren<Animator>();
+        myact = ActionType.init;
     }
 
     // Update is called once per frame
@@ -39,6 +53,19 @@ public class ZombieControl : MonoBehaviour
     {
         print("Status: " + myact);
         Enemy_Action();
+    }
+
+    public void Damaged(float att_power)
+    {
+        m_life -= att_power;
+        if(m_life <= 0)
+        {
+            GamesManager src = GameObject.Find("Game_Manager").GetComponent<GamesManager>(); //connecting the source object
+            src.KillCount++; //increase the zombie kill count
+            MainData.m_coin += 50; // earn coin on kill
+            Destroy(this.gameObject); //zombie destroy
+
+        }
     }
 
     private void OnCollisionEnter(Collision other)
@@ -96,7 +123,7 @@ public class ZombieControl : MonoBehaviour
                 break;
             case ActionType.drain:
                 //increase base life
-                obj_logic.Damaged(2.5f);
+                obj_logic.Damaged(matt_power);
 
                 myact = ActionType.cooltime;
                 break;

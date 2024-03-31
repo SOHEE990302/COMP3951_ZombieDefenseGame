@@ -11,11 +11,12 @@ class MainData
     static public int cur_Stage = 1;
     //
     static public int m_coin = 0; // the coins gained after destroying the enemy
-    static public float m_AttPow; //the main character's aggressive power
+    static public float m_AttPow = 0.8f; //the main character's aggressive power
     static public float m_baselife = 100;
+    static public float m_maxlife = 100; 
     //operational information
-    static public float music_vol = 1f; //Background music volume
-    static public float sfc_vol = 1f; //Sound effect sound volume
+    static public float music_vol = 0.7f; //Background music volume
+    static public float sfx_vol = 0.5f; //Sound effect sound volume
                                       //pause상태 체크
     static public bool is_pause = false; //Status variable to create a pause
     static public int max_enemy = 5;

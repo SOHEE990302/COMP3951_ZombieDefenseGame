@@ -32,7 +32,10 @@ public class CamScroll : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Scroll_Cam();
+        //if(MainData.is_pause != true)
+        {
+            Scroll_Cam();
+        }
     }
 
     public void Btn_Scroll_L()
