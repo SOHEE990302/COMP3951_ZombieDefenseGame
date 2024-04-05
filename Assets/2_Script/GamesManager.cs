@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Security.Cryptography;
 using System.Threading;
 using UnityEngine;
 
@@ -8,11 +9,16 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 // ??? ??? ??? ??
 
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
+
 
 public class GamesManager : MonoBehaviour
 {
     public Transform spawnPoint; //sapwnpoint
     public Transform zombie; //a tangible object
+
+    public Transform hit_effect; //zombie hit effect
 
     public int MakeCount = 0;
     public int KillCount = 0;
@@ -113,11 +119,36 @@ public class GamesManager : MonoBehaviour
                 {
                     UI_Clear.gameObject.SetActive(false);
                     logic_time = 0;
+
+                    SaveGame(); //save before we move to scene
                     NextScene_Market();
                 }
                 break;
 
         }
+    }
+
+    //for saving current data
+    void SaveGame()
+    {
+        saveData psave = new saveData(); //new save data 
+
+        psave.cur_Stage  = MainData.cur_Stage;
+        psave.m_baselife = MainData.m_baselife;
+        psave.m_coin     = MainData.m_coin;
+        psave.m_AttPow   = MainData.m_AttPow; 
+        psave.m_maxlife  = MainData.m_maxlife;
+
+        psave.music_vol = MainData.music_vol;
+        psave.sfx_vol = MainData.sfx_vol;
+
+        //saving process
+        FileStream fs = new FileStream("save.dat", FileMode.Create); // new file for save
+        //serialize/formatter
+        BinaryFormatter bf = new BinaryFormatter(); //getting binary formatter ready
+        bf.Serialize(fs, psave);
+        fs.Close();
+
     }
 
     void Make_Enemy()
@@ -171,8 +202,8 @@ public class GamesManager : MonoBehaviour
         {
             Ray screenray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit other;
-            if (Physics.Raycast(screenray, out other, 20f) == true)
-            {
+            if (Physics.Raycast(screenray, out other, 25f) == true)
+             {
                 //You need to check what is the correct object
                 print("There's a guy who got hit" + other.transform.name);
                 if (other.transform.tag == "Enemy")
@@ -184,6 +215,7 @@ public class GamesManager : MonoBehaviour
                     //KillCount++;
                     //Destroy(other.transform.gameObject);
                 }
+                Instantiate(hit_effect, other.point, Quaternion.identity);
             }
             else
             {

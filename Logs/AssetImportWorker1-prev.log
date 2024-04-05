@@ -15,7 +15,7 @@ C:/ssdData/BCIT/Term3/새 폴더/COMP3951_ZombieDefenseGame
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-52551
+55008
 Successfully changed project path to: C:/ssdData/BCIT/Term3/새 폴더/COMP3951_ZombieDefenseGame
 C:/ssdData/BCIT/Term3/새 폴더/COMP3951_ZombieDefenseGame
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ C:/ssdData/BCIT/Term3/새 폴더/COMP3951_ZombieDefenseGame
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [25760] Host "[IP] 169.254.213.240 [Port] 0 [Flags] 2 [Guid] 1620099154 [EditorId] 1620099154 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-2ILRNFK) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [28064] Host "[IP] 169.254.213.240 [Port] 0 [Flags] 2 [Guid] 4264141669 [EditorId] 4264141669 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-2ILRNFK) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [25760] Host "[IP] 169.254.213.240 [Port] 0 [Flags] 2 [Guid] 1620099154 [EditorId] 1620099154 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-2ILRNFK) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [28064] Host "[IP] 169.254.213.240 [Port] 0 [Flags] 2 [Guid] 4264141669 [EditorId] 4264141669 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-2ILRNFK) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 19 workers.
-Refreshing native plugins compatible for Editor in 4.15 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 4.34 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.21f1 (bf09ca542b87)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.21f1/Editor/Data/Resources/UnitySubsystems
@@ -70,46 +70,46 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.21f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.21f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.21f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56652
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56508
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.21f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.21f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003067 seconds.
-- Loaded All Assemblies, in  0.204 seconds
+Registered in 0.003354 seconds.
+- Loaded All Assemblies, in  0.198 seconds
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.162 seconds
-Domain Reload Profiling: 365ms
-	BeginReloadAssembly (62ms)
+- Finished resetting the current domain, in  0.158 seconds
+Domain Reload Profiling: 355ms
+	BeginReloadAssembly (57ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (20ms)
+	RebuildCommonClasses (19ms)
 	RebuildNativeTypeToScriptingClass (6ms)
 	initialDomainReloadingComplete (32ms)
 	LoadAllAssembliesAndSetupDomain (83ms)
-		LoadAssemblies (61ms)
+		LoadAssemblies (56ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
 		AnalyzeDomain (82ms)
 			TypeCache.Refresh (81ms)
 				TypeCache.ScanAssembly (73ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (162ms)
+	FinalizeReload (158ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (127ms)
+		SetupLoadedEditorAssemblies (123ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (5ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (1ms)
-			ProcessInitializeOnLoadAttributes (89ms)
-			ProcessInitializeOnLoadMethodAttributes (28ms)
+			ProcessInitializeOnLoadAttributes (87ms)
+			ProcessInitializeOnLoadMethodAttributes (27ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -117,8 +117,8 @@ Domain Reload Profiling: 365ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.361 seconds
-Refreshing native plugins compatible for Editor in 1.65 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.352 seconds
+Refreshing native plugins compatible for Editor in 1.42 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Package Manager log level set to [2]
@@ -126,47 +126,47 @@ Package Manager log level set to [2]
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.366 seconds
-Domain Reload Profiling: 727ms
+- Finished resetting the current domain, in  0.330 seconds
+Domain Reload Profiling: 682ms
 	BeginReloadAssembly (85ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (3ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (14ms)
-	RebuildCommonClasses (19ms)
+		CreateAndSetChildDomain (13ms)
+	RebuildCommonClasses (18ms)
 	RebuildNativeTypeToScriptingClass (6ms)
-	initialDomainReloadingComplete (23ms)
-	LoadAllAssembliesAndSetupDomain (228ms)
-		LoadAssemblies (169ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (215ms)
+		LoadAssemblies (158ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (106ms)
-			TypeCache.Refresh (93ms)
-				TypeCache.ScanAssembly (84ms)
+		AnalyzeDomain (103ms)
+			TypeCache.Refresh (90ms)
+				TypeCache.ScanAssembly (80ms)
 			ScanForSourceGeneratedMonoScriptInfo (9ms)
-			ResolveRequiredComponents (2ms)
-	FinalizeReload (367ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (331ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (270ms)
+		SetupLoadedEditorAssemblies (240ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (4ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (37ms)
-			ProcessInitializeOnLoadAttributes (211ms)
-			ProcessInitializeOnLoadMethodAttributes (13ms)
-			AfterProcessingInitializeOnLoad (2ms)
+			BeforeProcessingInitializeOnLoad (34ms)
+			ProcessInitializeOnLoadAttributes (185ms)
+			ProcessInitializeOnLoadMethodAttributes (12ms)
+			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (4ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 1.14 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.18 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3102 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 32 unused Assets / (57.4 KB). Loaded Objects now: 3565.
-Memory consumption went from 123.3 MB to 123.2 MB.
-Total: 1.964700 ms (FindLiveObjects: 0.256700 ms CreateObjectMapping: 0.076500 ms MarkObjects: 1.560100 ms  DeleteObjects: 0.070000 ms)
+Unloading 32 unused Assets / (56.9 KB). Loaded Objects now: 3566.
+Memory consumption went from 123.5 MB to 123.4 MB.
+Total: 1.844900 ms (FindLiveObjects: 0.133600 ms CreateObjectMapping: 0.036700 ms MarkObjects: 1.607500 ms  DeleteObjects: 0.066200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -183,1243 +183,33 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 9058.378446 seconds.
-  path: Assets/Low Poly Graveyard/Materials/Materials/Plitka_blue.mat
-  artifactKey: Guid(fa8594ae695736543859f60570dde706) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Graveyard/Materials/Materials/Plitka_blue.mat using Guid(fa8594ae695736543859f60570dde706) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9d1d2855bac13c314868561e98c4116') in 0.072196 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 8.317845 seconds.
-  path: Assets/Low Poly Graveyard/Models/BigTomb2.FBX
-  artifactKey: Guid(dab64ad3e16e8d942b56af5f95a96140) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Graveyard/Models/BigTomb2.FBX using Guid(dab64ad3e16e8d942b56af5f95a96140) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ae1083b34f79e3f23f3836ba634a399') in 0.031591 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Low Poly Graveyard/Models/tombstonesign.FBX
-  artifactKey: Guid(2c718e3a5b145ac4fb36a2563ae9289b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Graveyard/Models/tombstonesign.FBX using Guid(2c718e3a5b145ac4fb36a2563ae9289b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf23e57d8628edc71a8fb621088dd7a9') in 0.011831 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Low Poly Graveyard/Models/buried grave2.FBX
-  artifactKey: Guid(49362c86a9100494ba6ed42f14ed8681) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Graveyard/Models/buried grave2.FBX using Guid(49362c86a9100494ba6ed42f14ed8681) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30854e7773ab84288db589288f308100') in 0.012410 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/Low Poly Graveyard/Models/fence.FBX
-  artifactKey: Guid(7e90d28270482f043a447a5dd10de4a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Graveyard/Models/fence.FBX using Guid(7e90d28270482f043a447a5dd10de4a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1b0c198996339b11112e8aae2325cc5') in 0.011601 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/Low Poly Graveyard/Models/tombstone3.FBX
-  artifactKey: Guid(f2b30a540021a944f96a8d66fbc41467) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Graveyard/Models/tombstone3.FBX using Guid(f2b30a540021a944f96a8d66fbc41467) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a612be8c1db624a3e1cab6ff0fe10003') in 0.010587 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/Low Poly Graveyard/Models/grave1.FBX
-  artifactKey: Guid(586f70de42e26434281b438d7d19e6cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Graveyard/Models/grave1.FBX using Guid(586f70de42e26434281b438d7d19e6cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48bc777a5111b02876eb7a7000665d68') in 0.012178 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/Low Poly Graveyard/Models/brokencross3.FBX
-  artifactKey: Guid(967ba5a07fdbb85439dc6f3d374d0fad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Graveyard/Models/brokencross3.FBX using Guid(967ba5a07fdbb85439dc6f3d374d0fad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca688e7845bc1ac36cf405d368adcde5') in 0.012195 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/Low Poly Graveyard/Models/humanchest.FBX
-  artifactKey: Guid(07d0fb17c59ad39419a2947b0a5054c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Graveyard/Models/humanchest.FBX using Guid(07d0fb17c59ad39419a2947b0a5054c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'caff2233055493dd38c0e79a75e9ef58') in 0.011328 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/Low Poly Graveyard/Models/brokencross1.FBX
-  artifactKey: Guid(a3a9c44bdb59aa64d8ffd4ab3ea8bb71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Graveyard/Models/brokencross1.FBX using Guid(a3a9c44bdb59aa64d8ffd4ab3ea8bb71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0aec3b12258967828650403c2a74f626') in 0.011508 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/Low Poly Graveyard/Models/cross1.FBX
-  artifactKey: Guid(c46b0446c51022b409e2b1728027b4e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Graveyard/Models/cross1.FBX using Guid(c46b0446c51022b409e2b1728027b4e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85774e0072919596dfa5551d82dc48b5') in 0.011607 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000009 seconds.
-  path: Assets/Low Poly Graveyard/Models/tombstone2.FBX
-  artifactKey: Guid(d7dd5d49b299069468a8e0850c1dc4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Graveyard/Models/tombstone2.FBX using Guid(d7dd5d49b299069468a8e0850c1dc4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be45d5023c22432a86108598354ce7c4') in 0.014186 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/Low Poly Graveyard/Models/grave8.FBX
-  artifactKey: Guid(ebb1e5abeab6af84e8dc8b555aadcc34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Graveyard/Models/grave8.FBX using Guid(ebb1e5abeab6af84e8dc8b555aadcc34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68b44d781aec298847c49a7394ccd58d') in 0.010331 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/Low Poly Graveyard/Models/tombstone1.FBX
-  artifactKey: Guid(42f2040d9f2e7f7499bf78ca1a1a1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Graveyard/Models/tombstone1.FBX using Guid(42f2040d9f2e7f7499bf78ca1a1a1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19034f6c656bf326d72ad9797208a138') in 0.011335 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Low Poly Graveyard/Models/vaseshelf.FBX
-  artifactKey: Guid(fe301a98b331bc4448e7d0ccc2f8f993) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Graveyard/Models/vaseshelf.FBX using Guid(fe301a98b331bc4448e7d0ccc2f8f993) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f404423d62bb003d537036655bd74393') in 0.011979 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/Low Poly Graveyard/Models/buried grave1.FBX
-  artifactKey: Guid(8d8f165d4ea5e0649ad1473b2f3feb77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Graveyard/Models/buried grave1.FBX using Guid(8d8f165d4ea5e0649ad1473b2f3feb77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fdc71ec933801ba30483f2dc9bdec30') in 0.011384 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000009 seconds.
-  path: Assets/Low Poly Graveyard/Models/brokentombstone1.FBX
-  artifactKey: Guid(7ef0ae688626e0f4b813e50789481bf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Graveyard/Models/brokentombstone1.FBX using Guid(7ef0ae688626e0f4b813e50789481bf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f79fa7b053da4e14ea7d70d45fd2733b') in 0.011991 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/Low Poly Graveyard/Models/shovel.FBX
-  artifactKey: Guid(0752204d774b4a640974f78f0925ed66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Graveyard/Models/shovel.FBX using Guid(0752204d774b4a640974f78f0925ed66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5c0e50fff5ed51afd5719fcd2aedba7') in 0.012461 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000009 seconds.
-  path: Assets/Low Poly Graveyard/Models/sjull.FBX
-  artifactKey: Guid(955e678bf94f23a49b818b42959b28e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Graveyard/Models/sjull.FBX using Guid(955e678bf94f23a49b818b42959b28e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69aa7efa095ec8e226c6a3fb2c70e08e') in 0.011791 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Low Poly Graveyard/Models/flower1.FBX
-  artifactKey: Guid(e35a39b21dd83f6448a11acf8ad4ce09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Graveyard/Models/flower1.FBX using Guid(e35a39b21dd83f6448a11acf8ad4ce09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4b562e04fab851841c4aa89bcd345bf') in 0.011750 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/Low Poly Graveyard/Models/brokentombstone2.FBX
-  artifactKey: Guid(f3ae731c81ea63344a1165baec594d6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Graveyard/Models/brokentombstone2.FBX using Guid(f3ae731c81ea63344a1165baec594d6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57964ae77319f35ef9f28fd889146ee3') in 0.011993 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/Low Poly Graveyard/Models/bone1.FBX
-  artifactKey: Guid(62c0db52ccdf11b489bbf63f858a4bfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Graveyard/Models/bone1.FBX using Guid(62c0db52ccdf11b489bbf63f858a4bfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b76e25b867606d7518844f8c69dfe9f0') in 0.010984 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Low Poly Graveyard/Models/brokencross2.FBX
-  artifactKey: Guid(db22538a2350eca42b69984921dbd7de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Graveyard/Models/brokencross2.FBX using Guid(db22538a2350eca42b69984921dbd7de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3707eaa2918c6d99ee14fda3c757883a') in 0.011834 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/Low Poly Graveyard/Models/coffin.FBX
-  artifactKey: Guid(ab362dc39ea4eb145a0261327a28c80c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Graveyard/Models/coffin.FBX using Guid(ab362dc39ea4eb145a0261327a28c80c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce9f6fb8bde2514f4a70ac09c64ee820') in 0.011783 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 1.222297 seconds.
-  path: Assets/Low Poly Graveyard/Prefabs/bone1.prefab
-  artifactKey: Guid(59f35b235fd106e4fbc636fdb2630276) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Graveyard/Prefabs/bone1.prefab using Guid(59f35b235fd106e4fbc636fdb2630276) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82d5e41542c37563796bf256d8b25b26') in 0.109885 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/Low Poly Graveyard/Prefabs/tombstone1.prefab
-  artifactKey: Guid(9985664bcafd2294ab144a8bee41b3a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Graveyard/Prefabs/tombstone1.prefab using Guid(9985664bcafd2294ab144a8bee41b3a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f641e73144be0c947f9ec5747da5d5d') in 0.008159 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/Low Poly Graveyard/Prefabs/cross3.prefab
-  artifactKey: Guid(5877b7f391c9e474e94282600de544d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Graveyard/Prefabs/cross3.prefab using Guid(5877b7f391c9e474e94282600de544d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ea37f78f67ef751ea3a532245f03a2a') in 0.010302 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Low Poly Graveyard/Prefabs/humanchest.prefab
-  artifactKey: Guid(516495b6dbb4c2c46920ae41ff63a7c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Graveyard/Prefabs/humanchest.prefab using Guid(516495b6dbb4c2c46920ae41ff63a7c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '075c4a8a0a4b5015e5c3f82cc340117e') in 0.008297 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Low Poly Graveyard/Prefabs/brokencross2.prefab
-  artifactKey: Guid(80bee448bb3a2314396b907d54e4529d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Graveyard/Prefabs/brokencross2.prefab using Guid(80bee448bb3a2314396b907d54e4529d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ec7c5ba62810bdcf0d23d7dfc07120b') in 0.008146 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Low Poly Graveyard/Prefabs/DemoScene_prefab.prefab
-  artifactKey: Guid(78b7519a3bb8a894a8e3b287f50af51c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Graveyard/Prefabs/DemoScene_prefab.prefab using Guid(78b7519a3bb8a894a8e3b287f50af51c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe41a812d37c446fedfd2037ee5b6a14') in 0.015294 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 396
-========================================================================
-Received Import Request.
-  Time since last request: 0.000009 seconds.
-  path: Assets/Low Poly Graveyard/Prefabs/cross1.prefab
-  artifactKey: Guid(9d9b8bb6415028e488ab9999685f4c5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Graveyard/Prefabs/cross1.prefab using Guid(9d9b8bb6415028e488ab9999685f4c5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bbdf6fc980ed64b5f0e6012e8700d0a') in 0.007131 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/Low Poly Graveyard/Prefabs/brokentombstone4.prefab
-  artifactKey: Guid(079567f63ed456b4b992b5546f77a064) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Graveyard/Prefabs/brokentombstone4.prefab using Guid(079567f63ed456b4b992b5546f77a064) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c076aa447e0a69ded65e04408201428e') in 0.007489 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000009 seconds.
-  path: Assets/Low Poly Graveyard/Prefabs/coffinroof.prefab
-  artifactKey: Guid(b07873fad96387146b4236aa8505b45f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Graveyard/Prefabs/coffinroof.prefab using Guid(b07873fad96387146b4236aa8505b45f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98c50005aa8c19fa031185aac41203b4') in 0.008133 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Low Poly Graveyard/Prefabs/grave6.prefab
-  artifactKey: Guid(d1958d257c44b484c9bb773aa3b222d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Graveyard/Prefabs/grave6.prefab using Guid(d1958d257c44b484c9bb773aa3b222d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dd6130bf326705d882a22cac30f4f5f') in 0.007928 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Low Poly Graveyard/Prefabs/brokentombstone1.prefab
-  artifactKey: Guid(30ae1bb7dcd8b284698b5e1e1c9bb0e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Graveyard/Prefabs/brokentombstone1.prefab using Guid(30ae1bb7dcd8b284698b5e1e1c9bb0e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5336cca776e871b39d1b576d73c42c4f') in 0.008221 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Low Poly Graveyard/Prefabs/brokencross1.prefab
-  artifactKey: Guid(46d841e7dc9993945ac39b9d889b0e75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Graveyard/Prefabs/brokencross1.prefab using Guid(46d841e7dc9993945ac39b9d889b0e75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54cfe3ea07faf4d6b61f57783a52ae07') in 0.008296 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/Low Poly Graveyard/Prefabs/tombstone4.prefab
-  artifactKey: Guid(25a277d583f3a9c4f99669e30b48271a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Graveyard/Prefabs/tombstone4.prefab using Guid(25a277d583f3a9c4f99669e30b48271a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74f24a5f85dd2844b5d80dfa513cd823') in 0.007439 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/Low Poly Graveyard/Prefabs/grave2.prefab
-  artifactKey: Guid(9aef0954b7d7800499562cb9bdfd28e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Graveyard/Prefabs/grave2.prefab using Guid(9aef0954b7d7800499562cb9bdfd28e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'faffc2df6d59f968a2eb29a0a4e55d88') in 0.007447 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000009 seconds.
-  path: Assets/Low Poly Graveyard/Prefabs/brokentombstone3.prefab
-  artifactKey: Guid(791f6d86b0466b54bb5d89e40ae60019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Graveyard/Prefabs/brokentombstone3.prefab using Guid(791f6d86b0466b54bb5d89e40ae60019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '766df506dbe44adda1c27d87ccd1ba36') in 0.008099 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/Low Poly Graveyard/Prefabs/buried grave2.prefab
-  artifactKey: Guid(ad738a6f9b3f1054e96395e09e05cad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Graveyard/Prefabs/buried grave2.prefab using Guid(ad738a6f9b3f1054e96395e09e05cad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73b5b1c213488576aa4c05b8b602de7c') in 0.007305 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Low Poly Graveyard/Prefabs/grave7.prefab
-  artifactKey: Guid(42a171cf451b4d64399d37a24140f30c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Graveyard/Prefabs/grave7.prefab using Guid(42a171cf451b4d64399d37a24140f30c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c84ee2d240d0f3dd561770480eb41391') in 0.007875 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/Low Poly Graveyard/Prefabs/sjull.prefab
-  artifactKey: Guid(8b8c447cd66c53e42a05b5863a88c1b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Graveyard/Prefabs/sjull.prefab using Guid(8b8c447cd66c53e42a05b5863a88c1b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76cdcb843adac93451de3bf9e9f2e7cb') in 0.008215 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/Low Poly Graveyard/Prefabs/flower3.prefab
-  artifactKey: Guid(361e926a44fe31e4597d5acb7ddc56c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Graveyard/Prefabs/flower3.prefab using Guid(361e926a44fe31e4597d5acb7ddc56c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae7ece4f02f8f8b71d3a511d19851459') in 0.009296 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 2.465922 seconds.
-  path: Assets/Low Poly Graveyard/Materials/grass1.png
-  artifactKey: Guid(d261b31106421ec429c4b730d13665ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Graveyard/Materials/grass1.png using Guid(d261b31106421ec429c4b730d13665ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c24a944536aa3dc8ab7efe8b2000a64') in 0.013180 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/Low Poly Graveyard/Materials/Sand.png
-  artifactKey: Guid(6d1242119c516264fb3e0eb4e8d6d981) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Graveyard/Materials/Sand.png using Guid(6d1242119c516264fb3e0eb4e8d6d981) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c0cff9d31b183e9d24f747cf5b64d42') in 0.006666 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000009 seconds.
-  path: Assets/Low Poly Graveyard/Materials/plitka.mat
-  artifactKey: Guid(c7e151c6881c0c048a941206cc5c8c90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Graveyard/Materials/plitka.mat using Guid(c7e151c6881c0c048a941206cc5c8c90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51a8940b2bbe8888059d00db8e7edf7f') in 0.017857 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Low Poly Graveyard/Materials/New Material.mat
-  artifactKey: Guid(15647121468b2074d9e98d64f2d4ee34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Graveyard/Materials/New Material.mat using Guid(15647121468b2074d9e98d64f2d4ee34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2710cdbe957b5712ee1741ea27116e46') in 0.037158 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 1315.820522 seconds.
-  path: Assets/10_Grave_asset/Textures/colormap.png
-  artifactKey: Guid(efdd98cd412f3824d8b8e3578001155c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/10_Grave_asset/Textures/colormap.png using Guid(efdd98cd412f3824d8b8e3578001155c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e96a23a1537331e1d60662473c51ec7') in 0.010082 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.002175 seconds.
-  path: Assets/9_ToonyTinyPeople/TT_demo/ToonyTiny_Citizens_Megapack.tga
-  artifactKey: Guid(44aec3aaa337c294c9265a35fa489440) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/9_ToonyTinyPeople/TT_demo/ToonyTiny_Citizens_Megapack.tga using Guid(44aec3aaa337c294c9265a35fa489440) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98395084ad1b82227a8f160e3823b104') in 0.008375 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/9_ToonyTinyPeople/TT_demo/ToonyTiny_City_Pack.tga
-  artifactKey: Guid(d8467266b321e0342acb2a5b24a06fe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/9_ToonyTinyPeople/TT_demo/ToonyTiny_City_Pack.tga using Guid(d8467266b321e0342acb2a5b24a06fe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d81b6f194d6882f421f3b2bff100ce7') in 0.009096 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/11_Tiny_Toony_City_Demo/PolygonBlacksmith/TT_Citizens_demo/models/Materials/TT_demo_texture.tga
-  artifactKey: Guid(a80a727671e675149954421e86769a91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/11_Tiny_Toony_City_Demo/PolygonBlacksmith/TT_Citizens_demo/models/Materials/TT_demo_texture.tga using Guid(a80a727671e675149954421e86769a91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7167efaf46529534938825b9478890db') in 0.008890 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.245 seconds
-Refreshing native plugins compatible for Editor in 1.30 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.431 seconds
-Domain Reload Profiling: 676ms
-	BeginReloadAssembly (93ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (2ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (21ms)
-	RebuildCommonClasses (18ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (16ms)
-	LoadAllAssembliesAndSetupDomain (111ms)
-		LoadAssemblies (150ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (7ms)
-			TypeCache.Refresh (4ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (3ms)
-	FinalizeReload (431ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (223ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (4ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (32ms)
-			ProcessInitializeOnLoadAttributes (169ms)
-			ProcessInitializeOnLoadMethodAttributes (13ms)
-			AfterProcessingInitializeOnLoad (2ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (4ms)
-Refreshing native plugins compatible for Editor in 1.25 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3093 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 23 unused Assets / (31.2 KB). Loaded Objects now: 3617.
-Memory consumption went from 128.3 MB to 128.3 MB.
-Total: 1.564700 ms (FindLiveObjects: 0.136300 ms CreateObjectMapping: 0.038100 ms MarkObjects: 1.361300 ms  DeleteObjects: 0.028300 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 3239.457410 seconds.
-  path: Assets/Day-Night Skyboxes/Textures/SkyAfterNoon_Bottom.png
-  artifactKey: Guid(b6ef619cfefbc3a48bfe3a846f9adb9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Day-Night Skyboxes/Textures/SkyAfterNoon_Bottom.png using Guid(b6ef619cfefbc3a48bfe3a846f9adb9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42e21583de3c02ea170b1663d055c7ae') in 0.037864 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Day-Night Skyboxes/Textures/SkyHole_Front.png
-  artifactKey: Guid(519bff0f165c6b541a8d626121260e3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Day-Night Skyboxes/Textures/SkyHole_Front.png using Guid(519bff0f165c6b541a8d626121260e3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe97df04bd4db275629e909897b724da') in 0.009244 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Day-Night Skyboxes/Textures/SkyAfterNoon_Front.png
-  artifactKey: Guid(801a87c5db92ace45a6a9346777f1f5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Day-Night Skyboxes/Textures/SkyAfterNoon_Front.png using Guid(801a87c5db92ace45a6a9346777f1f5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42be3e1d644f96437d32c77b846cb8a8') in 0.008537 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Day-Night Skyboxes/Textures/SkyMidNight_Back.png
-  artifactKey: Guid(1a40cbba43c28844d9d5434d798a3784) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Day-Night Skyboxes/Textures/SkyMidNight_Back.png using Guid(1a40cbba43c28844d9d5434d798a3784) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eabc49f0bfe4c3e0020ad6eab2bde392') in 0.009125 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Day-Night Skyboxes/Textures/SkyMidNight_Bottom.png
-  artifactKey: Guid(b37a0b3bf146f5748a2ae0b5856eba8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Day-Night Skyboxes/Textures/SkyMidNight_Bottom.png using Guid(b37a0b3bf146f5748a2ae0b5856eba8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbb4b27803efd4a68c154eaa42a2811a') in 0.008251 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Day-Night Skyboxes/Textures/SkyCloudy_Left.png
-  artifactKey: Guid(bcc8c05874f1a2748a8df9f4a201b172) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Day-Night Skyboxes/Textures/SkyCloudy_Left.png using Guid(bcc8c05874f1a2748a8df9f4a201b172) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '842e206bcef225d6e69e3385801e4b4c') in 0.008803 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Day-Night Skyboxes/Textures/SkyCloudy_Top.png
-  artifactKey: Guid(e71cba7ef433f8c418d4dcde1e79fb98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Day-Night Skyboxes/Textures/SkyCloudy_Top.png using Guid(e71cba7ef433f8c418d4dcde1e79fb98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1eb1ba8d58c3c39d5f4cbf2532c5e90') in 0.009465 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/Day-Night Skyboxes/Textures/SkyHole_Bottom.png
-  artifactKey: Guid(209d171ae2172044ba0c2520127c8120) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Day-Night Skyboxes/Textures/SkyHole_Bottom.png using Guid(209d171ae2172044ba0c2520127c8120) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59a603c12302bb9c6e417c0a2ec60be5') in 0.008309 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Day-Night Skyboxes/Textures/SkyAfterNoon_Top.png
-  artifactKey: Guid(31b24bb50a20c0047b30ee5fc78848b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Day-Night Skyboxes/Textures/SkyAfterNoon_Top.png using Guid(31b24bb50a20c0047b30ee5fc78848b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28d568c928c6624f4591cce9f702881d') in 0.008447 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Day-Night Skyboxes/Textures/SkyHole_Top.png
-  artifactKey: Guid(962d039a3950b124099ac6d3aedff947) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Day-Night Skyboxes/Textures/SkyHole_Top.png using Guid(962d039a3950b124099ac6d3aedff947) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '756f3d2c6d1034c971533f5394c1a87c') in 0.009254 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Day-Night Skyboxes/Textures/SkyEarlyDusk_Top.png
-  artifactKey: Guid(9d95a22c05b30774fa8556489f0c5561) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Day-Night Skyboxes/Textures/SkyEarlyDusk_Top.png using Guid(9d95a22c05b30774fa8556489f0c5561) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '847e7014eaa8cd18c25b2601c80d6df7') in 0.008814 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Day-Night Skyboxes/Textures/SkyAfterNoon_Left.png
-  artifactKey: Guid(969ef861056a05940ba9123d15486191) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Day-Night Skyboxes/Textures/SkyAfterNoon_Left.png using Guid(969ef861056a05940ba9123d15486191) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2d5cdbffbe4513e3096954879c882ab') in 0.008283 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Day-Night Skyboxes/Textures/SkyCloudy_Front.png
-  artifactKey: Guid(f1dbab6ff4a0d364888f2b32cf7fae59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Day-Night Skyboxes/Textures/SkyCloudy_Front.png using Guid(f1dbab6ff4a0d364888f2b32cf7fae59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c58ce7f4cb32c69f5072dc8c8142a144') in 0.008898 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/Day-Night Skyboxes/Textures/SkyCloudy_Bottom.png
-  artifactKey: Guid(02a96a4cf316be246a590957eaa06cbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Day-Night Skyboxes/Textures/SkyCloudy_Bottom.png using Guid(02a96a4cf316be246a590957eaa06cbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0587f45a472024935e241888ef0e728') in 0.008395 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Day-Night Skyboxes/Textures/SkyHole_Left.png
-  artifactKey: Guid(290f12ad67dd9334fae83c3cf6670a73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Day-Night Skyboxes/Textures/SkyHole_Left.png using Guid(290f12ad67dd9334fae83c3cf6670a73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '095c08a5b8abe56359c84e59b553ebfe') in 0.009220 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Day-Night Skyboxes/Textures/SkyEarlyDusk_Left.png
-  artifactKey: Guid(8733101b6a14ca740b346255c2d3f21f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Day-Night Skyboxes/Textures/SkyEarlyDusk_Left.png using Guid(8733101b6a14ca740b346255c2d3f21f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e73b4aa07e923276ce07969514323603') in 0.008571 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.503493 seconds.
-  path: Assets/Day-Night Skyboxes/Textures/SkyMidNight_Left.png
-  artifactKey: Guid(b712a49fc11d9fd4dbf18d71b3f53e31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Day-Night Skyboxes/Textures/SkyMidNight_Left.png using Guid(b712a49fc11d9fd4dbf18d71b3f53e31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c45785c15b880f7415ac28809633d89') in 0.010030 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.011027 seconds.
-  path: Assets/Day-Night Skyboxes/Textures/SkyMidNight_Top.png
-  artifactKey: Guid(e211c2ca9055575428e0614590e7e651) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Day-Night Skyboxes/Textures/SkyMidNight_Top.png using Guid(e211c2ca9055575428e0614590e7e651) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2b2e8ae25c64eb40848d471b4844ee9') in 0.009986 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.015159 seconds.
-  path: Assets/Day-Night Skyboxes/Textures/SkyMorning_Bottom.png
-  artifactKey: Guid(ba8c76432fb29c44695a619aea972dc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Day-Night Skyboxes/Textures/SkyMorning_Bottom.png using Guid(ba8c76432fb29c44695a619aea972dc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '503c6f2502a5441f571129ea58f3c20a') in 0.009176 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.218542 seconds.
-  path: Assets/Day-Night Skyboxes/Textures/SkyMorning_Left.png
-  artifactKey: Guid(c6df5489072ca7a4fad87ec2825e86da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Day-Night Skyboxes/Textures/SkyMorning_Left.png using Guid(c6df5489072ca7a4fad87ec2825e86da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e62644907238a77a08115e252e2553c') in 0.032662 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.009970 seconds.
-  path: Assets/Day-Night Skyboxes/Textures/SkyMorning_Top.png
-  artifactKey: Guid(9ad0e713be508944f996dfc70214fdb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Day-Night Skyboxes/Textures/SkyMorning_Top.png using Guid(9ad0e713be508944f996dfc70214fdb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57183a025b492ec75edf6449b852a359') in 0.008724 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Day-Night Skyboxes/Textures/SkyNight_Bottom.png
-  artifactKey: Guid(6b08df31452aace4481829fe706777c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Day-Night Skyboxes/Textures/SkyNight_Bottom.png using Guid(6b08df31452aace4481829fe706777c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0366ac8f172c042b566f4d2659581ec7') in 0.008379 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.228605 seconds.
-  path: Assets/Day-Night Skyboxes/Textures/SkyNight_Left.png
-  artifactKey: Guid(1b28b1ed2ef4f114394b2dde7b05f3fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Day-Night Skyboxes/Textures/SkyNight_Left.png using Guid(1b28b1ed2ef4f114394b2dde7b05f3fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a174f5f3b6d4ee6f977300ca1726f74b') in 0.014123 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Day-Night Skyboxes/Textures/SkyNight_Top.png
-  artifactKey: Guid(c7b66e97c44826544a44bd8d9857c7ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Day-Night Skyboxes/Textures/SkyNight_Top.png using Guid(c7b66e97c44826544a44bd8d9857c7ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6b8c603e580b8edcc496012f6b40d95') in 0.009853 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.010636 seconds.
-  path: Assets/Day-Night Skyboxes/Textures/SkyNoon_Bottom.png
-  artifactKey: Guid(ca936d5ad9282044293249963704b9ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Day-Night Skyboxes/Textures/SkyNoon_Bottom.png using Guid(ca936d5ad9282044293249963704b9ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b86fc5aaf047725c02b0d08221734cbe') in 0.008375 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 12.154890 seconds.
-  path: Assets/Day-Night Skyboxes/Textures/SkyNoon_Left.png
-  artifactKey: Guid(1ded1ac4a932ce548b131efe140dee3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Day-Night Skyboxes/Textures/SkyNoon_Left.png using Guid(1ded1ac4a932ce548b131efe140dee3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1184a0d75ae5fe81a8042e2126fda719') in 0.009319 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Day-Night Skyboxes/Textures/SkySunSet_Top.png
-  artifactKey: Guid(2d392eade9cbd2546bb57e72a95e6df6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Day-Night Skyboxes/Textures/SkySunSet_Top.png using Guid(2d392eade9cbd2546bb57e72a95e6df6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f419bdc8b6745580e6fe9fced0f84ab') in 0.009724 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Day-Night Skyboxes/Textures/SkyNoon_Right.png
-  artifactKey: Guid(4f6bec75bfe65ad49a0826debe902b30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Day-Night Skyboxes/Textures/SkyNoon_Right.png using Guid(4f6bec75bfe65ad49a0826debe902b30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5928292e7214d0818bc736684098bd8') in 0.017222 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Day-Night Skyboxes/Textures/SkyNoon_Top.png
-  artifactKey: Guid(d8abefee4b4a16546abf8b0a732a7e40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Day-Night Skyboxes/Textures/SkyNoon_Top.png using Guid(d8abefee4b4a16546abf8b0a732a7e40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e6c3673e2aa8c65ffe802a5bb7f21a6') in 0.007643 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Day-Night Skyboxes/Textures/SkySunSet_Right.png
-  artifactKey: Guid(ceb208991d952ac4cb2bb411dd82a5be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Day-Night Skyboxes/Textures/SkySunSet_Right.png using Guid(ceb208991d952ac4cb2bb411dd82a5be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c26e750a9ed6317c55e5c9fe70e0fbb6') in 0.008012 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 570.167135 seconds.
-  path: Assets/Day-Night Skyboxes/Materials/SkyBrightMorning.mat
-  artifactKey: Guid(0b846be1b116429409a7669cacf2a62e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Day-Night Skyboxes/Materials/SkyBrightMorning.mat using Guid(0b846be1b116429409a7669cacf2a62e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95b3e75c6b8d28baf51fcc2d32a02ea2') in 0.110843 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
+  Time since last request: 15817.789524 seconds.
   path: Assets/Day-Night Skyboxes/Materials/SkyMidnight.mat
   artifactKey: Guid(97637a2a763b7f24b8da4e139e4144ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Day-Night Skyboxes/Materials/SkyMidnight.mat using Guid(97637a2a763b7f24b8da4e139e4144ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11a3fab735726e2e3e0c568eca82b923') in 0.009846 seconds
+Start importing Assets/Day-Night Skyboxes/Materials/SkyMidnight.mat using Guid(97637a2a763b7f24b8da4e139e4144ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c8047c45babd7cbfdec4262727197dc') in 0.066855 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 7
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/Day-Night Skyboxes/Materials/SkyHaloSky.mat
-  artifactKey: Guid(e523c896238589445ae28370258d26c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Day-Night Skyboxes/Materials/SkyHaloSky.mat using Guid(e523c896238589445ae28370258d26c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '734af9de4733490e62a0a6a71b80a043') in 0.010528 seconds
+  Time since last request: 0.000020 seconds.
+  path: Assets/Day-Night Skyboxes/Materials/SkyBrightMorning.mat
+  artifactKey: Guid(0b846be1b116429409a7669cacf2a62e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Day-Night Skyboxes/Materials/SkyBrightMorning.mat using Guid(0b846be1b116429409a7669cacf2a62e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36f28338225713a43bb152ebb45dfd50') in 0.011299 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 7
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000012 seconds.
+  Time since last request: 0.000011 seconds.
   path: Assets/Day-Night Skyboxes/Materials/SkyCloudy.mat
   artifactKey: Guid(d11d338e6a849d84f85a289f91b3fa00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Day-Night Skyboxes/Materials/SkyCloudy.mat using Guid(d11d338e6a849d84f85a289f91b3fa00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ed715574f6bd469fd013c070ccca692') in 0.011360 seconds
+Start importing Assets/Day-Night Skyboxes/Materials/SkyCloudy.mat using Guid(d11d338e6a849d84f85a289f91b3fa00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db4e3b08c0ded3d186c9542611eea76c') in 0.010528 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 7
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Day-Night Skyboxes/Materials/SkyEarlyDusk.mat
-  artifactKey: Guid(82b660520bdecce4daf45d270ec93fe4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Day-Night Skyboxes/Materials/SkyEarlyDusk.mat using Guid(82b660520bdecce4daf45d270ec93fe4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '352b4295eb5082c69e6504326bc288a3') in 0.010565 seconds
+  Time since last request: 0.000009 seconds.
+  path: Assets/Day-Night Skyboxes/Materials/SkyNoon.mat
+  artifactKey: Guid(3e56423e1fe71f94ea97f5bb2004a7e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Day-Night Skyboxes/Materials/SkyNoon.mat using Guid(3e56423e1fe71f94ea97f5bb2004a7e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2b66ff7365ef1dc10ea6b12f5de30ef') in 0.014144 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 7
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/9_ToonyTinyPeople/TT_demo/models/Materials/TT_demo.mat
-  artifactKey: Guid(8fd192304df88db499eedb3456dc6d67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/9_ToonyTinyPeople/TT_demo/models/Materials/TT_demo.mat using Guid(8fd192304df88db499eedb3456dc6d67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d6803f6f302892dc3c54d481a43ac84') in 0.030610 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 106.275794 seconds.
-  path: Assets/10_Grave_asset/crypt.fbx
-  artifactKey: Guid(4713105d975d99044a1d95e447ffc8f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/10_Grave_asset/crypt.fbx using Guid(4713105d975d99044a1d95e447ffc8f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '933a0deab9f1f6100cb60f6edf12ef3d') in 0.044421 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/11_Tiny_Toony_City_Demo/Materials/M_City.mat
-  artifactKey: Guid(372a0ee0586b691428d79f25b90f4296) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/11_Tiny_Toony_City_Demo/Materials/M_City.mat using Guid(372a0ee0586b691428d79f25b90f4296) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3810f97e09866c408ebf7b7ed6a3ca3') in 0.008571 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/10_Grave_asset/brick-wall.fbx
-  artifactKey: Guid(ea4588d1a40294140b7bba4a4b8ea434) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/10_Grave_asset/brick-wall.fbx using Guid(ea4588d1a40294140b7bba4a4b8ea434) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34c887bd5e4e260ae298139ce25dab8a') in 0.011046 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/10_Grave_asset/candle-multiple.fbx
-  artifactKey: Guid(115048c19df42b74f81dccf79ea28b46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/10_Grave_asset/candle-multiple.fbx using Guid(115048c19df42b74f81dccf79ea28b46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '319f19c10568a70b73a3d94d70c3c05c') in 0.011741 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/10_Grave_asset/stone-wall-column.fbx
-  artifactKey: Guid(601d6c0051222d5489546a429db907c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/10_Grave_asset/stone-wall-column.fbx using Guid(601d6c0051222d5489546a429db907c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56ce6f7b848f1cd9ccd40b00b6c3e3c4') in 0.012287 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/10_Grave_asset/rocks.fbx
-  artifactKey: Guid(6287ea16a020f564aadb89057c18346e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/10_Grave_asset/rocks.fbx using Guid(6287ea16a020f564aadb89057c18346e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7eddc80d72a29dad877322c7f3f13024') in 0.013700 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/10_Grave_asset/character-vampire.fbx
-  artifactKey: Guid(99f3bc87ba29eb242acc67a258a535a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/10_Grave_asset/character-vampire.fbx using Guid(99f3bc87ba29eb242acc67a258a535a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff80229d6e4670bf8fcbb733822a7831') in 0.025778 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 68
-========================================================================
-Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/10_Grave_asset/grave.fbx
-  artifactKey: Guid(f9137c33e50b3cc45ad1d6f96e895dde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/10_Grave_asset/grave.fbx using Guid(f9137c33e50b3cc45ad1d6f96e895dde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e666489ae277b23a94b4d1c81edc506e') in 0.014334 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/10_Grave_asset/detail-plate.fbx
-  artifactKey: Guid(b343f7adcad87e54684c2e8cccdb6ee8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/10_Grave_asset/detail-plate.fbx using Guid(b343f7adcad87e54684c2e8cccdb6ee8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57ee92c20800fc44e8a693d618f55a53') in 0.011723 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/10_Grave_asset/brick-wall-curve-small.fbx
-  artifactKey: Guid(78d25092593135747a578bf869492a4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/10_Grave_asset/brick-wall-curve-small.fbx using Guid(78d25092593135747a578bf869492a4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e0cd088ee9df31fcba5a3c194aabeb4') in 0.012552 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/10_Grave_asset/crypt-small.fbx
-  artifactKey: Guid(b6ec700dc22942a46bbff04861d99d26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/10_Grave_asset/crypt-small.fbx using Guid(b6ec700dc22942a46bbff04861d99d26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74f8f4705664ba132f2b546cb8226e41') in 0.012906 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/3_Materials/Land_Material.mat
-  artifactKey: Guid(4b822bc1c6f15a647b5b2916bf161c06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3_Materials/Land_Material.mat using Guid(4b822bc1c6f15a647b5b2916bf161c06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca7036bfd0bd28c212fc540324bb6c52') in 0.009203 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/10_Grave_asset/pumpkin-tall.fbx
-  artifactKey: Guid(e8eac3f28cce23b458505c48ed539740) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/10_Grave_asset/pumpkin-tall.fbx using Guid(e8eac3f28cce23b458505c48ed539740) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '941c85749c2bff0eb7bd39b9dbb0a82c') in 0.012605 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/10_Grave_asset/crypt-large-roof.fbx
-  artifactKey: Guid(c1bebf5b07381d04a8552e2e906f225e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/10_Grave_asset/crypt-large-roof.fbx using Guid(c1bebf5b07381d04a8552e2e906f225e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f140932a5f6ffe4278cf1b5c7f6ec381') in 0.012156 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/10_Grave_asset/column-large.fbx
-  artifactKey: Guid(63117cf4865cb214d85751d617d2b5fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/10_Grave_asset/column-large.fbx using Guid(63117cf4865cb214d85751d617d2b5fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2d541268c4cc190419037e094a31ec2') in 0.012617 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/10_Grave_asset/pine-fall.fbx
-  artifactKey: Guid(6ea6b51e593aa144d99300d72fe2ccc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/10_Grave_asset/pine-fall.fbx using Guid(6ea6b51e593aa144d99300d72fe2ccc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e00372ab67af01117b706a15eed258a7') in 0.012453 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/10_Grave_asset/gravestone-cross-large.fbx
-  artifactKey: Guid(65e3254081157974397366a3cb77a20a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/10_Grave_asset/gravestone-cross-large.fbx using Guid(65e3254081157974397366a3cb77a20a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e60c5b4d3d7976138d303781c6694df') in 0.012434 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/10_Grave_asset/road.fbx
-  artifactKey: Guid(080e0997008cbcf4094ac6be24975755) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/10_Grave_asset/road.fbx using Guid(080e0997008cbcf4094ac6be24975755) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f75bb7f80d47268f81864ef2dfb81608') in 0.011649 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/10_Grave_asset/pine-crooked.fbx
-  artifactKey: Guid(220b6a36a289e084e80520de5f9f970d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/10_Grave_asset/pine-crooked.fbx using Guid(220b6a36a289e084e80520de5f9f970d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f61d8e200a72f595f4d7c982d8b54c55') in 0.012078 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/9_ToonyTinyPeople/TT_demo/sample_scene/ground.mat
-  artifactKey: Guid(434413e1195066545a96066e385c44e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/9_ToonyTinyPeople/TT_demo/sample_scene/ground.mat using Guid(434413e1195066545a96066e385c44e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '763808e2f47bceb80fbeb45941198840') in 0.008262 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/10_Grave_asset/cross-wood.fbx
-  artifactKey: Guid(97856bb95a0de4f439345186cb76f284) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/10_Grave_asset/cross-wood.fbx using Guid(97856bb95a0de4f439345186cb76f284) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf8c5252c61c15c5a27d77fb96a34c98') in 0.013847 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/8_LowPolyBarriersPackFree/BonusAssets/Materials/Floor_M.mat
-  artifactKey: Guid(9ee2d30a428d7bf41bfe4bdb4e6e659b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8_LowPolyBarriersPackFree/BonusAssets/Materials/Floor_M.mat using Guid(9ee2d30a428d7bf41bfe4bdb4e6e659b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae744bd654066ceea72f15dbab892513') in 0.008998 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/10_Grave_asset/gravestone-debris.fbx
-  artifactKey: Guid(0ab8ae08213828c4fa514e8503aa7dc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/10_Grave_asset/gravestone-debris.fbx using Guid(0ab8ae08213828c4fa514e8503aa7dc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ed25649a2f56977f560d6e571694001') in 0.010991 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Low Poly Graveyard/Materials/Materials/Ground.mat
-  artifactKey: Guid(33746ff3a9a6d884197f0516d5bb6988) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Graveyard/Materials/Materials/Ground.mat using Guid(33746ff3a9a6d884197f0516d5bb6988) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '961dcc6e6f4c4c2a81bf5835640edabc') in 0.008519 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/10_Grave_asset/pumpkin-carved.fbx
-  artifactKey: Guid(11e22b142a9c6b44facef317e49d8013) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/10_Grave_asset/pumpkin-carved.fbx using Guid(11e22b142a9c6b44facef317e49d8013) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11c3de67016b53c30a82fa0f67a9465a') in 0.012700 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/10_Grave_asset/rocks-tall.fbx
-  artifactKey: Guid(359b7c5a5bd37ce49b890ef325f6aa2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/10_Grave_asset/rocks-tall.fbx using Guid(359b7c5a5bd37ce49b890ef325f6aa2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b3b3928b8a2456eb95f541dd9b6acdc') in 0.013218 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/10_Grave_asset/hay-bale-bundled.fbx
-  artifactKey: Guid(c36b88ab51286cc4aa25f14d7e9734fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/10_Grave_asset/hay-bale-bundled.fbx using Guid(c36b88ab51286cc4aa25f14d7e9734fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b874f0c2eea1c58ef7cdeebc1cb32f52') in 0.011564 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/10_Grave_asset/iron-fence-border-curve.fbx
-  artifactKey: Guid(93bfd198b38d13946bed1de751f5f4b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/10_Grave_asset/iron-fence-border-curve.fbx using Guid(93bfd198b38d13946bed1de751f5f4b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ebface53e25030c389f7d44d43b06eb') in 0.012368 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/10_Grave_asset/pillar-large.fbx
-  artifactKey: Guid(d5b6c97bb9a160d4db2607687c0d71b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/10_Grave_asset/pillar-large.fbx using Guid(d5b6c97bb9a160d4db2607687c0d71b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd526ddbbea4d02348de711a4feef268a') in 0.011963 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/10_Grave_asset/gravestone-round.fbx
-  artifactKey: Guid(6caf79ae997e3654b9e6c85a98a2a42f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/10_Grave_asset/gravestone-round.fbx using Guid(6caf79ae997e3654b9e6c85a98a2a42f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6103422235c71d2a4ada5da62436ea50') in 0.011905 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000009 seconds.
-  path: Assets/10_Grave_asset/urn.fbx
-  artifactKey: Guid(74a5d1a6882c56f42bbdb5f628ac5f00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/10_Grave_asset/urn.fbx using Guid(74a5d1a6882c56f42bbdb5f628ac5f00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78113d6b123acba1422d95e3c41256c9') in 0.015106 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 14
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/8_LowPolyBarriersPackFree/BarriersAssets/Materials/BarriersMain_M.mat
-  artifactKey: Guid(a1f48d7877435ff459de07b08955ed80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8_LowPolyBarriersPackFree/BarriersAssets/Materials/BarriersMain_M.mat using Guid(a1f48d7877435ff459de07b08955ed80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b38c0cc835f87ad1fea8785d808615f') in 0.009076 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/10_Grave_asset/lightpost-double.fbx
-  artifactKey: Guid(2ad6caf7289e0ee4cb46206c8b100ffb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/10_Grave_asset/lightpost-double.fbx using Guid(2ad6caf7289e0ee4cb46206c8b100ffb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bb12d49b7db72c264112c05f040a31a') in 0.012613 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/8_LowPolyBarriersPackFree/BarriersAssets/Meshes/WoodenBarriers/WoodenPlankBarrier_14_v1.fbx
-  artifactKey: Guid(e4b3197345ef47c458a394eb7af96edd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8_LowPolyBarriersPackFree/BarriersAssets/Meshes/WoodenBarriers/WoodenPlankBarrier_14_v1.fbx using Guid(e4b3197345ef47c458a394eb7af96edd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f5e8a944e349977a619d3cf7db13966') in 0.012468 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/8_LowPolyBarriersPackFree/BarriersAssets/Meshes/BarbedWireBarriers/BarbedWireMetalFence_26_v1.fbx
-  artifactKey: Guid(37cd9370d8110e74b9ccfd97123169d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8_LowPolyBarriersPackFree/BarriersAssets/Meshes/BarbedWireBarriers/BarbedWireMetalFence_26_v1.fbx using Guid(37cd9370d8110e74b9ccfd97123169d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '627dea32855b3ac8f8cd1a0bd1425d7e') in 0.013236 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/10_Grave_asset/pumpkin.fbx
-  artifactKey: Guid(5675cbeef611f2b45b320c0cdd309b7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/10_Grave_asset/pumpkin.fbx using Guid(5675cbeef611f2b45b320c0cdd309b7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '849905f7ceee4c3a30fb1cb275f63d02') in 0.012658 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/10_Grave_asset/trunk.fbx
-  artifactKey: Guid(fec13a6430f939340b9f33c0d2eeb6dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/10_Grave_asset/trunk.fbx using Guid(fec13a6430f939340b9f33c0d2eeb6dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdb24739902ab8a83a5d71324bf6de50') in 0.012368 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/10_Grave_asset/lightpost-all.fbx
-  artifactKey: Guid(84021baf918655244b4d14fd2aa3b47f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/10_Grave_asset/lightpost-all.fbx using Guid(84021baf918655244b4d14fd2aa3b47f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c40d4f44ec15879902635bdd4ad6adc') in 0.012090 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/10_Grave_asset/gravestone-flat.fbx
-  artifactKey: Guid(52ad79989bccbee48862ee837b6042eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/10_Grave_asset/gravestone-flat.fbx using Guid(52ad79989bccbee48862ee837b6042eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f449b54e0876db42ed4ff35b622d1b91') in 0.012219 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/10_Grave_asset/pillar-obelisk.fbx
-  artifactKey: Guid(1aa8fd1ffa1fae74c9506aa6b47ff4ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/10_Grave_asset/pillar-obelisk.fbx using Guid(1aa8fd1ffa1fae74c9506aa6b47ff4ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd8b9b0ef7f6934ea83871228818bfd8') in 0.012550 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/10_Grave_asset/crypt-small-entrance.fbx
-  artifactKey: Guid(6153113108ee2cb42a4501e315cf03fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/10_Grave_asset/crypt-small-entrance.fbx using Guid(6153113108ee2cb42a4501e315cf03fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe231ec46bf17bd01d3923f4a72467d2') in 0.011893 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/10_Grave_asset/shovel.fbx
-  artifactKey: Guid(5b9884ff2cb357641a3c83f24bd53abc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/10_Grave_asset/shovel.fbx using Guid(5b9884ff2cb357641a3c83f24bd53abc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04681db17a22c160886bdf1c0cac85f2') in 0.012344 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000009 seconds.
-  path: Assets/10_Grave_asset/pillar-small.fbx
-  artifactKey: Guid(7cca432395259d545b65c99535a8cddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/10_Grave_asset/pillar-small.fbx using Guid(7cca432395259d545b65c99535a8cddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '330f2ab3e9c654b31f2c7b3d739f4680') in 0.011480 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/8_LowPolyBarriersPackFree/BarriersAssets/Meshes/SandBagBarriers/SandBagPallet_16_v3.fbx
-  artifactKey: Guid(c4fcb28b999650e46b63c3a3e988bcdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8_LowPolyBarriersPackFree/BarriersAssets/Meshes/SandBagBarriers/SandBagPallet_16_v3.fbx using Guid(c4fcb28b999650e46b63c3a3e988bcdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cb89943771717bd949a322556265ed0') in 0.012045 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/8_LowPolyBarriersPackFree/BarriersAssets/Meshes/SandBagBarriers/SandBagWall_04_v2.fbx
-  artifactKey: Guid(acaa2cb72d6476343a1047da3cddfddd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8_LowPolyBarriersPackFree/BarriersAssets/Meshes/SandBagBarriers/SandBagWall_04_v2.fbx using Guid(acaa2cb72d6476343a1047da3cddfddd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '882b9ca622534c164f9fd1cf495517ca') in 0.012548 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/10_Grave_asset/crypt-large.fbx
-  artifactKey: Guid(0abcb0bdc0fdf9649a059164852896d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/10_Grave_asset/crypt-large.fbx using Guid(0abcb0bdc0fdf9649a059164852896d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '616fc7aa4449381cd6c5d6f7cabf2c8e') in 0.012900 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/10_Grave_asset/iron-fence-border.fbx
-  artifactKey: Guid(0b600ff166533614db6e285d18bed68d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/10_Grave_asset/iron-fence-border.fbx using Guid(0b600ff166533614db6e285d18bed68d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4becea84b8d858f3a3b6c90609e0ad8') in 0.012458 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/8_LowPolyBarriersPackFree/BarriersAssets/Meshes/ConcreteBarriers/ConcreteBarrier_08_v2.fbx
-  artifactKey: Guid(cf7fa84b14c72e240896775ab71035e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8_LowPolyBarriersPackFree/BarriersAssets/Meshes/ConcreteBarriers/ConcreteBarrier_08_v2.fbx using Guid(cf7fa84b14c72e240896775ab71035e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66c5a0c4a026fde212127d8dd67881d6') in 0.011718 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/10_Grave_asset/iron-fence-damaged.fbx
-  artifactKey: Guid(291ce12aa4f12e444b53002e1aacd6ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/10_Grave_asset/iron-fence-damaged.fbx using Guid(291ce12aa4f12e444b53002e1aacd6ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20db7d98f9f4764735bce29e7020fddc') in 0.012325 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/10_Grave_asset/gravestone-roof.fbx
-  artifactKey: Guid(d734e1ec5dff5f449bb8af740b005e92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/10_Grave_asset/gravestone-roof.fbx using Guid(d734e1ec5dff5f449bb8af740b005e92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35c825819315b77a7b89119b07d3c48a') in 0.012596 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/8_LowPolyBarriersPackFree/BarriersAssets/Meshes/SandBagBarriers/SandBarrier_28_v1.fbx
-  artifactKey: Guid(37737cbe47b83c4408bdd9976afc03bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8_LowPolyBarriersPackFree/BarriersAssets/Meshes/SandBagBarriers/SandBarrier_28_v1.fbx using Guid(37737cbe47b83c4408bdd9976afc03bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa9c2f0f1389452c29a392b0b4e1a9fc') in 0.012353 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/8_LowPolyBarriersPackFree/BarriersAssets/Meshes/MetalBarriers/MetalFence_23_v1.fbx
-  artifactKey: Guid(c9c5970fb22921b4ea495bc9e1600c21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8_LowPolyBarriersPackFree/BarriersAssets/Meshes/MetalBarriers/MetalFence_23_v1.fbx using Guid(c9c5970fb22921b4ea495bc9e1600c21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1293ea24c4fbb19db6ad0e63a74363da') in 0.012129 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/10_Grave_asset/brick-wall-end.fbx
-  artifactKey: Guid(c0947b69bc4049541b2ea922fb0d996a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/10_Grave_asset/brick-wall-end.fbx using Guid(c0947b69bc4049541b2ea922fb0d996a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55471de951d81a95966c64cea1d9229d') in 0.012906 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/99_Temp_File/Land.mat
-  artifactKey: Guid(6afe8759522f9e94bb78eb0a9e06b227) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/99_Temp_File/Land.mat using Guid(6afe8759522f9e94bb78eb0a9e06b227) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b460bad4d0583dda78252ef5bfad57b') in 0.007181 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/8_LowPolyBarriersPackFree/BarriersAssets/Meshes/BarbedWireBarriers/BarbedWireFence_36_v1.fbx
-  artifactKey: Guid(d38fc9b79f129384393a749bf10126ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8_LowPolyBarriersPackFree/BarriersAssets/Meshes/BarbedWireBarriers/BarbedWireFence_36_v1.fbx using Guid(d38fc9b79f129384393a749bf10126ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1c6b21a35c37eac338103f2c22c52be') in 0.012580 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/10_Grave_asset/candle.fbx
-  artifactKey: Guid(9f3392356f6468b46bdf33bc3b4fc521) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/10_Grave_asset/candle.fbx using Guid(9f3392356f6468b46bdf33bc3b4fc521) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df21650a9d98b431ed0751faf010e9f7') in 0.012359 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/10_Grave_asset/bench.fbx
-  artifactKey: Guid(d9ad4a358be37c64fb8689c9f9699601) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/10_Grave_asset/bench.fbx using Guid(d9ad4a358be37c64fb8689c9f9699601) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dd5c6daaac0a0a815cc319b01e63052') in 0.012476 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/8_LowPolyBarriersPackFree/BarriersAssets/Meshes/MetalBarriers/MetalBarrier_06_v2.fbx
-  artifactKey: Guid(241a323ff55292a4eabfe8e6db2efc40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8_LowPolyBarriersPackFree/BarriersAssets/Meshes/MetalBarriers/MetalBarrier_06_v2.fbx using Guid(241a323ff55292a4eabfe8e6db2efc40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3098ebff9d70b3353e0b1c4603e93d8') in 0.012260 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/8_LowPolyBarriersPackFree/BarriersAssets/Meshes/WoodenBarriers/WoodenBarriersParts/SingleSmallLog_12_v2.fbx
-  artifactKey: Guid(bff4be5fed6eb0c45b648a0a15163a65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8_LowPolyBarriersPackFree/BarriersAssets/Meshes/WoodenBarriers/WoodenBarriersParts/SingleSmallLog_12_v2.fbx using Guid(bff4be5fed6eb0c45b648a0a15163a65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '103beebd44c0410d429f57865925616c') in 0.011564 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/10_Grave_asset/detail-chalice.fbx
-  artifactKey: Guid(c4455b1e7cc6fe441827c3dc52408f68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/10_Grave_asset/detail-chalice.fbx using Guid(c4455b1e7cc6fe441827c3dc52408f68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f992cbb36a07f70783a92d09a74d2917') in 0.012152 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9

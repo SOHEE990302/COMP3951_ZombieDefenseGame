@@ -6,6 +6,24 @@ using UnityEngine.SceneManagement; // Accessing thin management classes and data
 // I'll accept the Ui object and process the order when the button is pressed
 // If you press the button, I'll turn over the scene
 
+// using for save files
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
+using System;
+
+//save data files 
+[Serializable]
+class saveData
+{
+    public int   cur_Stage; //saved stage
+    public float music_vol; //saved volume
+    public float sfx_vol; //saved volume
+
+    public float m_baselife; //saved baselife
+    public float m_maxlife; //saved maxlife
+    public float m_AttPow; //saved attack power(upgraded)
+    public int   m_coin; //saved money
+}
 class MainData
 {
     static public int cur_Stage = 1;
@@ -19,7 +37,7 @@ class MainData
     static public float sfx_vol = 0.5f; //Sound effect sound volume
                                       //pause상태 체크
     static public bool is_pause = false; //Status variable to create a pause
-    static public int max_enemy = 5;
+    static public int max_enemy = 2;
 }
 //추후에 디자인 패턴을 생각해야함
 public enum GameState //States to enter when playing the game

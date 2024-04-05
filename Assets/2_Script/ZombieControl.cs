@@ -21,6 +21,9 @@ public class ZombieControl : MonoBehaviour
     GameObject Find_obj; //find object
     Base_Control obj_logic; //conect source
 
+    public GameObject die_effect; //zombie die effect
+
+
     Animator my_ani;
 
     public float m_life; //zombie(monster life)
@@ -41,8 +44,9 @@ public class ZombieControl : MonoBehaviour
 
     void init_Data()
     {
-        m_life = 1.1f; //zombie health
-        matt_power = 0.6f; //zombie attack power
+        //upgrading zombies as the stages go up
+        m_life = 1f + (MainData.cur_Stage*0.2f); //zombie health
+        matt_power = 0.6f + (MainData.cur_Stage * 0.2f); //zombie attack power
 
         my_ani = this.GetComponentInChildren<Animator>();
         myact = ActionType.init;
@@ -62,7 +66,9 @@ public class ZombieControl : MonoBehaviour
         {
             GamesManager src = GameObject.Find("Game_Manager").GetComponent<GamesManager>(); //connecting the source object
             src.KillCount++; //increase the zombie kill count
-            MainData.m_coin += 50; // earn coin on kill
+            MainData.m_coin += 70; // earn coin on kill
+
+            Instantiate(die_effect, this.transform.position, this.transform.transform.rotation);
             Destroy(this.gameObject); //zombie destroy
 
         }

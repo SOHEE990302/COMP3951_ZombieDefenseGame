@@ -122,6 +122,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee036936a43d7404fa9ba031eec3eba5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  die_effect: {fileID: 3332632403795228414, guid: a4e61218f76c8654b8a9ec9f51699cd2, type: 3}
+  m_life: 0
+  matt_power: 0
 --- !u!54 &2627635468834022648
 Rigidbody:
   m_ObjectHideFlags: 0
