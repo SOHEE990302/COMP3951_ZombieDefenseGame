@@ -37,11 +37,13 @@ class MainData
     static public float m_baselife = 100;
     static public float m_maxlife = 100; 
     //operational information
-    static public float music_vol = 0.7f; //Background music volume
-    static public float sfx_vol = 0.5f; //Sound effect sound volume
+    static public float music_vol = 0.3f; //Background music volume
+    static public float sfx_vol = 0.3f; //Sound effect sound volume
                                       //pause상태 체크
     static public bool is_pause = false; //Status variable to create a pause
-    static public int max_enemy = 2;
+    static public int max_enemy = 6;
+
+    static public bool ui_click = false;
 }
 //추후에 디자인 패턴을 생각해야함
 public enum GameState //States to enter when playing the game
@@ -58,15 +60,42 @@ public enum GameState //States to enter when playing the game
 }
 public class TtileManager : MonoBehaviour
 {
+    public Slider Music_vol;
+    public Slider Sfx_vol;
+    //음악의 볼륨 0~1
+    //슬라이드 범위 0~1
+
+    public void Change_Vol_Music()
+    {
+        MainData.music_vol = Music_vol.value;
+    }
+    public void Change_Vol_Sfx()
+    {
+        MainData.sfx_vol = Sfx_vol.value;
+    }
+
+    public void Set_Volume()
+    {
+        MainData.sfx_vol = Sfx_vol.value;
+        MainData.music_vol = Music_vol.value;
+
+    }
+
     //Exit the game when you press the Exit button
     public void Exit_Game()
     {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+        Application.Quit();
+#endif
 
     }
     //Processing when you press the New Game button
     public void New_Game()
     {
         SceneManager.LoadScene("2_Game_Scene");
+        Set_Volume();
     }
 
     //Loading a game from the saved data
@@ -77,10 +106,8 @@ public class TtileManager : MonoBehaviour
         {
             fs = new FileStream("save.dat", FileMode.Open);
         }
-        catch(Exception e)
-        {
-            
-        }
+        catch(Exception e) { print(e.Message); }
+
         if(fs != null)
         {
             print("load game success");

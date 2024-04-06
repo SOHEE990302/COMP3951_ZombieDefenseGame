@@ -4,11 +4,8 @@ using System.Diagnostics;
 using System.Security.Cryptography;
 using System.Threading;
 using UnityEngine;
-
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-// ??? ??? ??? ??
-
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 
@@ -28,11 +25,12 @@ public class GamesManager : MonoBehaviour
     public Slider Base_energy;
     public Slider music_vols;
     public Slider sfx_vols;
-
+    public GameObject Gun_Sound;
     public GameObject UI_fail; //Fail UI
     public GameObject UI_Clear; //Clear UI
+    AudioSource bgm_mucis; //background music
+    AudioSource sfx_gun;
 
-    // ??? ??? ????
     float logic_time = 0; //internal time for the function
     bool is_make_Enemy = true; //making zombie?
     GameObject Find_obj; // Find a subject
@@ -55,6 +53,7 @@ public class GamesManager : MonoBehaviour
     {
         initData();
         ShowUI();
+        
     }
 
 
@@ -68,6 +67,18 @@ public class GamesManager : MonoBehaviour
         obj_logic = Find_obj.GetComponent<Base_Control>();
         music_vols.value = MainData.music_vol;
         sfx_vols.value = MainData.sfx_vol;
+        //Sound Playback
+       // sfx_gun = Gun_Sound.GetComponentInChildren<AudioSource>();
+       // sfx_gun.loop = false;
+      //  sfx_gun.playOnAwake = false;
+
+        bgm_mucis = this.GetComponent<AudioSource>();
+        bgm_mucis.loop = true;
+        bgm_mucis.playOnAwake = false;
+        bgm_mucis.volume = MainData.music_vol;
+        bgm_mucis.Play();
+        print("vol" + MainData.music_vol + "    " + MainData.sfx_vol);
+        MainData.ui_click = false;
     }
 
     // Update is called once per frame
@@ -84,7 +95,6 @@ public class GamesManager : MonoBehaviour
             //Rule_Check(); //check game rule
         }
         Game_Rule();
-
     }
 
     void Game_Rule()
@@ -174,7 +184,7 @@ public class GamesManager : MonoBehaviour
             UI_Clear.gameObject.SetActive(true);
 
         }
-        if (obj_logic.mylife <= 0)
+        if (MainData.m_baselife <= 0)
         {
             UI_fail.gameObject.SetActive(true);
             g_state = GameState.Fail;
@@ -187,10 +197,13 @@ public class GamesManager : MonoBehaviour
         if (MainData.is_pause == true)
         {
             Time.timeScale = 0f;
+            bgm_mucis.Pause();
         }
         else
         {
             Time.timeScale = 1f;
+            bgm_mucis.volume = MainData.music_vol;
+            bgm_mucis.UnPause();
         }
     }
 
@@ -201,6 +214,8 @@ public class GamesManager : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0) == true) //0 <- left / 1,2 <- middle, right
         {
+          //  sfx_gun.volume = MainData.sfx_vol;
+          //  sfx_gun.Play();
             Ray screenray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit other;
             if (Physics.Raycast(screenray, out other, 25f) == true)
@@ -216,7 +231,11 @@ public class GamesManager : MonoBehaviour
                     //KillCount++;
                     //Destroy(other.transform.gameObject);
                 }
-                Instantiate(hit_effect, other.point, Quaternion.identity);
+                if(MainData.ui_click == false)//ui? ????? ??
+                {
+                    Instantiate(hit_effect, other.point, Quaternion.identity); 
+                }
+
             }
             else
             {
@@ -261,11 +280,18 @@ public class GamesManager : MonoBehaviour
     {
         print("pause");
         MainData.is_pause = true;
+        MainData.ui_click = true;
     }
 
     public void On_Resume()
     {
-        print("resume");
+        Invoke("UI_Restore", 0.2f);
+
         MainData.is_pause = false;
+
+    }
+    void UI_Restore()
+    {
+        MainData.ui_click = false;
     }
 }

@@ -40,16 +40,19 @@ public class CamScroll : MonoBehaviour
 
     public void Btn_Scroll_L()
     {
+        MainData.ui_click = true;
         dir_x = -1;
     }
 
     public void Btn_Scroll_R()
     {
+        MainData.ui_click = true;
         dir_x = 1;
     }
 
     public void Btn_Scroll_Up()
     {
+        MainData.ui_click = false;
         dir_x = 0; ;
     }
 }

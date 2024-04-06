@@ -19,10 +19,12 @@ public class OverManager : MonoBehaviour
     }
     public void Btn_Continue()
     {
+        MainData.m_baselife = MainData.m_maxlife;
         SceneManager.LoadScene("2_Game_Scene");
     }
     public void Btn_GoTilte()
     {
+        MainData.m_baselife = MainData.m_maxlife;
         SceneManager.LoadScene("1_Ttile_Scene");
     }
 }

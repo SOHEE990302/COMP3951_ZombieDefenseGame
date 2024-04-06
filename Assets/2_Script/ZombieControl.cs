@@ -26,6 +26,9 @@ public class ZombieControl : MonoBehaviour
 
     Animator my_ani;
 
+    AudioSource zombi_sound;
+    public AudioClip[] effcts;
+
     public float m_life; //zombie(monster life)
     public float matt_power; //zombie attack power
 
@@ -40,6 +43,12 @@ public class ZombieControl : MonoBehaviour
         print("Find_obj" + Find_obj.tag);
         //Obtain information from Zombie's animation and control it in its code
         init_Data();
+        zombi_sound = this.GetComponent<AudioSource>();
+        zombi_sound.clip = effcts[0];
+        zombi_sound.loop = false;
+        zombi_sound.volume = MainData.sfx_vol;
+        zombi_sound.playOnAwake = false;
+        zombi_sound.Play();
     }
 
     void init_Data()
@@ -141,6 +150,9 @@ public class ZombieControl : MonoBehaviour
                     myact = ActionType.attack;
 
                     my_ani.SetBool("is_Attack", true);
+                    zombi_sound.volume = MainData.sfx_vol;
+                    zombi_sound.clip = effcts[1];
+                    zombi_sound.Play();
                 }
                 break;
         }

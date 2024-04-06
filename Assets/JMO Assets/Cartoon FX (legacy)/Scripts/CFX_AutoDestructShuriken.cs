@@ -12,11 +12,14 @@ public class CFX_AutoDestructShuriken : MonoBehaviour
 {
 	// If true, deactivate the object instead of destroying it
 	public bool OnlyDeactivate;
-	
+	public AudioSource effect_sound;
 	void OnEnable()
 	{
 		StartCoroutine("CheckIfAlive");
-	}
+        effect_sound.volume = MainData.sfx_vol;
+		effect_sound.Play();
+
+    }
 	
 	IEnumerator CheckIfAlive ()
 	{

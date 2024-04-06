@@ -6,19 +6,20 @@ public class Base_Control : MonoBehaviour
 {
     public Text base_life;
     // Start is called before the first frame update
-    public float mylife = MainData.m_baselife;
+    float mylife;
 
     public GameObject blood_canvas; //player hit effect
 
     void Start()
     {
-
-    }
+       // print(mylife);
+       mylife = MainData.m_baselife;
+}
 
     // Update is called once per frame
     void Update()
     {
-        base_life.text = "" + mylife;
+        base_life.text = string.Format("{0:N1}", MainData.m_baselife);
     }
     // damage function
     public void Damaged(float att_power)
