@@ -138,6 +138,7 @@ public class GamesManager : MonoBehaviour
         psave.m_coin     = MainData.m_coin;
         psave.m_AttPow   = MainData.m_AttPow; 
         psave.m_maxlife  = MainData.m_maxlife;
+        psave.max_enemy = MainData.max_enemy;
 
         psave.music_vol = MainData.music_vol;
         psave.sfx_vol = MainData.sfx_vol;

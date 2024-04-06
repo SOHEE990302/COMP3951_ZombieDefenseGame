@@ -9,7 +9,10 @@ using UnityEngine.SceneManagement; // Accessing thin management classes and data
 // using for save files
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
+using System.Runtime.Serialization;
 using System;
+using System.Runtime.InteropServices;
+using System.Diagnostics;
 
 //save data files 
 [Serializable]
@@ -23,6 +26,7 @@ class saveData
     public float m_maxlife; //saved maxlife
     public float m_AttPow; //saved attack power(upgraded)
     public int   m_coin; //saved money
+    public int max_enemy;
 }
 class MainData
 {
@@ -60,9 +64,50 @@ public class TtileManager : MonoBehaviour
 
     }
     //Processing when you press the New Game button
-    public void New_Gane()
+    public void New_Game()
     {
         SceneManager.LoadScene("2_Game_Scene");
+    }
+
+    //Loading a game from the saved data
+    public void LoadGame()
+    {
+        FileStream fs = null;
+        try
+        {
+            fs = new FileStream("save.dat", FileMode.Open);
+        }
+        catch(Exception e)
+        {
+            
+        }
+        if(fs != null)
+        {
+            print("load game success");
+            BinaryFormatter bf = new BinaryFormatter();
+            saveData pdata;
+            pdata = (saveData)bf.Deserialize(fs);
+
+            MainData.m_baselife = pdata.m_baselife;
+            MainData.m_maxlife = pdata.m_maxlife;
+            MainData.m_coin = pdata.m_coin;
+            MainData.m_AttPow = pdata.m_AttPow;
+            MainData.cur_Stage = pdata.cur_Stage;
+            MainData.max_enemy = pdata.max_enemy;
+
+            MainData.music_vol = pdata.music_vol;
+            MainData.sfx_vol = pdata.sfx_vol;
+            
+            UnityEngine.Debug.Log("" + pdata.m_coin + "  " + pdata.m_baselife); 
+            fs.Close();
+            //Loading the saved data to the Game Scene
+            SceneManager.LoadScene("2_Game_Scene");
+        }
+        else
+        {
+            print("load game fail");
+            New_Game();
+        }
     }
 
     // Start is called before the first frame update
