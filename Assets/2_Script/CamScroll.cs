@@ -17,7 +17,7 @@ public class CamScroll : MonoBehaviour
         dir_x = 0;
     }
 
-    void Scroll_Cam()
+    public void Scroll_Cam()
     {
         mycam.transform.position += Vector3.right * speed * Time.deltaTime * dir_x;
         //mycam.transform.Translate() one possible way

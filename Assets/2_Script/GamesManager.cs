@@ -38,7 +38,7 @@ public class GamesManager : MonoBehaviour
     GameObject Find_obj; // Find a subject
     Base_Control obj_logic; // Associate the source with the corresponding variable
 
-    GameState g_state;
+    public GameState g_state;
 
     public void NextScene_Market()//move to the next scene when this is called
     {
@@ -87,7 +87,7 @@ public class GamesManager : MonoBehaviour
 
     }
 
-    void Game_Rule()
+    public void Game_Rule()
     {
         switch (g_state)
         {

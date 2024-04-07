@@ -17,10 +17,10 @@ public class MarketManager : MonoBehaviour
     public Button btn_Repair;
     public Button btn_Upgrade;
 
-    int repair;  //repair cost
-    int upgrade; //upgrade cost
+    public int repair;  //repair cost
+    public int upgrade; //upgrade cost
 
-    void Show_Market()
+    public void Show_Market()
     {
         //cost logic
 
@@ -76,7 +76,7 @@ public class MarketManager : MonoBehaviour
         MainData.m_AttPow += 0.3f;
     }
 
-    void Calculate_Cost()
+    public void Calculate_Cost()
     {
         repair = 700;
         upgrade = 1000;

@@ -13,18 +13,18 @@ public enum ActionType {
 
 public class ZombieControl : MonoBehaviour
 {
-    ActionType myact;
+    public ActionType myact;
 
     //status change based on time
-    float action_time;
+    public float action_time;
 
-    GameObject Find_obj; //find object
-    Base_Control obj_logic; //conect source
+    public GameObject Find_obj; //find object
+    public Base_Control obj_logic; //conect source
 
     public GameObject die_effect; //zombie die effect
 
 
-    Animator my_ani;
+    public Animator my_ani;
 
     public float m_life; //zombie(monster life)
     public float matt_power; //zombie attack power
@@ -58,19 +58,28 @@ public class ZombieControl : MonoBehaviour
         print("Status: " + myact);
         Enemy_Action();
     }
-
     public void Damaged(float att_power)
     {
         m_life -= att_power;
-        if(m_life <= 0)
+
+        if (m_life <= 0)
         {
-            GamesManager src = GameObject.Find("Game_Manager").GetComponent<GamesManager>(); //connecting the source object
-            src.KillCount++; //increase the zombie kill count
-            MainData.m_coin += 70; // earn coin on kill
+            // 여기서 null 참조 예외가 발생할 수 있습니다.
+            // 예를 들어, die_effect가 Inspector에서 할당되지 않았다면 Instantiate 시도 시 예외가 발생할 수 있습니다.
+            if (die_effect != null)
+            {
+                Instantiate(die_effect, this.transform.position, Quaternion.identity);
+            }
+            else
+            {
+                Debug.LogError("die_effect is not set!");
+            }
 
-            Instantiate(die_effect, this.transform.position, this.transform.transform.rotation);
-            Destroy(this.gameObject); //zombie destroy
+            // 게임 매니저 또는 다른 컴포넌트에 대한 참조가 필요하다면, null 체크를 해야 합니다.
+            // 예: GamesManager src = GameObject.Find("Game_Manager").GetComponent<GamesManager>();
+            // if (src != null) { /* 로직 처리 */ }
 
+            Destroy(gameObject); // 게임 오브젝트 파괴
         }
     }
 
@@ -84,7 +93,7 @@ public class ZombieControl : MonoBehaviour
             my_ani.SetTrigger("Cooltime");
         }
     }
-    void Enemy_Action()
+    public void Enemy_Action()
     {
         switch (myact)
         {
