@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
+using System;
 
 public class TitleManagerTests
 {
@@ -12,21 +13,21 @@ public class TitleManagerTests
     [SetUp]
     public void SetUp()
     {
-        // TitleManager 오브젝트 생성
+        // Create TitleManager object
         titleManagerObj = new GameObject();
         titleManager = titleManagerObj.AddComponent<TitleManager>();
 
-        // MainData 초기화
+        // Initialize MainData
         ResetMainData();
     }
 
     [TearDown]
     public void TearDown()
     {
-        // 생성된 게임 오브젝트 제거
-        Object.DestroyImmediate(titleManagerObj);
+        // Destroy the created game object
+        UnityEngine.Object.DestroyImmediate(titleManagerObj);
 
-        // MainData 초기화
+        // Reset MainData
         ResetMainData();
     }
 
@@ -46,7 +47,7 @@ public class TitleManagerTests
     [Test]
     public void TitleManager_LoadsDataCorrectly()
     {
-        // Arrange: saveData 객체를 직접 생성
+        // Arrange: Directly create a saveData object
         saveData mockData = new saveData
         {
             cur_Stage = 2,
@@ -59,10 +60,10 @@ public class TitleManagerTests
             sfx_vol = 0.6f
         };
 
-        // Act: LoadGame 메서드 실행 대신 MainData에 직접 mockData를 적용
+        // Act: Instead of executing LoadGame method, directly apply mockData to MainData
         ApplyMockDataToMainData(mockData);
 
-        // Assert: MainData가 올바르게 업데이트되었는지 확인
+        // Assert: Verify that MainData is updated correctly
         Assert.AreEqual(mockData.cur_Stage, MainData.cur_Stage);
         Assert.AreEqual(mockData.m_baselife, MainData.m_baselife);
         Assert.AreEqual(mockData.m_maxlife, MainData.m_maxlife);
@@ -73,7 +74,7 @@ public class TitleManagerTests
         Assert.AreEqual(mockData.sfx_vol, MainData.sfx_vol);
     }
 
-    // 이 메서드는 실제 TitleManager.LoadGame() 로직을 대체합니다.
+    // This method replaces the actual logic of TitleManager.LoadGame().
     private void ApplyMockDataToMainData(saveData data)
     {
         MainData.cur_Stage = data.cur_Stage;
@@ -85,7 +86,4 @@ public class TitleManagerTests
         MainData.music_vol = data.music_vol;
         MainData.sfx_vol = data.sfx_vol;
     }
-
-    // SceneManager.LoadScene 호출을 포함한 다른 메서드의 테스트는 PlayMode 테스트로 구현해야 할 수도 있습니다.
-    // 예: New_Game, Exit_Game 등
 }

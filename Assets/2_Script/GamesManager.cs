@@ -203,7 +203,7 @@ public class GamesManager : MonoBehaviour
         {
             Ray screenray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit other;
-            if (Physics.Raycast(screenray, out other, 25f) == true)
+            if (Physics.Raycast(screenray, out other, 20f) == true)
              {
                 //You need to check what is the correct object
                 print("There's a guy who got hit" + other.transform.name);

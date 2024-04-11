@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using System;
 using UnityEngine;
 
 public class ZombieControlTests
@@ -10,33 +11,33 @@ public class ZombieControlTests
     [SetUp]
     public void SetUp()
     {
-        // 테스트 환경 설정: ZombieControl 컴포넌트를 가진 게임 오브젝트 생성
+        // Test setup: Create a GameObject with a ZombieControl component
         zombieGameObject = new GameObject();
         zombieControl = zombieGameObject.AddComponent<ZombieControl>();
 
-        // die_effect에 대한 모의 게임 오브젝트 생성 및 할당
+        // Create and assign a mock GameObject for die_effect
         dieEffectGameObject = new GameObject("DieEffect");
         zombieControl.die_effect = dieEffectGameObject;
 
-        // 필요한 초기화 진행
-        zombieControl.m_life = 100f; // 예시: 생명력을 100으로 설정
+        // Proceed with necessary initialization
+        zombieControl.m_life = 100f; // Example: Set life to 100
     }
 
     [TearDown]
     public void Teardown()
     {
-        // 테스트 후 정리: 생성된 게임 오브젝트 제거
-        Object.DestroyImmediate(zombieGameObject);
-        Object.DestroyImmediate(dieEffectGameObject);
+        // Cleanup after test: Destroy the created GameObjects
+        UnityEngine.Object.DestroyImmediate(zombieGameObject);
+        UnityEngine.Object.DestroyImmediate(dieEffectGameObject);
     }
 
     [Test]
     public void Damaged_LifeIsReducedByAttackPower()
     {
-        // Act: 공격력을 적용하여 Damaged 메소드 실행
-        zombieControl.Damaged(10f); // 공격력 10 적용
+        // Act: Execute the Damaged method applying attack power
+        zombieControl.Damaged(10f); // Apply attack power of 10
 
-        // Assert: 생명력이 공격력만큼 감소했는지 검증
+        // Assert: Verify that life is reduced by the amount of attack power
         Assert.AreEqual(90f, zombieControl.m_life);
     }
 }

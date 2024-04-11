@@ -1,6 +1,8 @@
 using NUnit.Framework;
+using System;
 using UnityEngine;
 using UnityEngine.UI;
+using static System.Net.Mime.MediaTypeNames;
 
 public class BaseControlTests
 {
@@ -12,11 +14,11 @@ public class BaseControlTests
     {
         gameObject = new GameObject();
         baseControl = gameObject.AddComponent<Base_Control>();
-        baseControl.base_life = new GameObject().AddComponent<Text>();
+        baseControl.base_life = new GameObject().AddComponent<UnityEngine.UI.Text>();
         baseControl.blood_canvas = new GameObject();
-        baseControl.blood_canvas.SetActive(false); // 초기 상태를 비활성화로 설정
+        baseControl.blood_canvas.SetActive(false); // Set the initial state to inactive
 
-        // MainData 및 Base_Control 초기화
+        // Initialize MainData and Base_Control
         MainData.m_baselife = 100f;
         baseControl.mylife = MainData.m_baselife;
     }
@@ -24,27 +26,24 @@ public class BaseControlTests
     [TearDown]
     public void Teardown()
     {
-        // 테스트 후 정리
-        Object.DestroyImmediate(gameObject);
+        // Cleanup after tests
+        UnityEngine.Object.DestroyImmediate(gameObject);
     }
 
     [Test]
     public void Damaged_ReduceLifeAndActivateBloodCanvas()
     {
-        // 공격력 설정
+        // Set attack power
         float attackPower = 10f;
 
-        // Damaged 메소드 실행
+        // Execute the Damaged method
         baseControl.Damaged(attackPower);
 
-        // mylife 감소 검증
+        // Verify mylife reduction
         Assert.AreEqual(90f, baseControl.mylife);
-        // MainData.m_baselife 감소 검증
+        // Verify MainData.m_baselife reduction
         Assert.AreEqual(90f, MainData.m_baselife);
-        // blood_canvas 활성화 검증
+        // Verify blood_canvas activation
         Assert.IsTrue(baseControl.blood_canvas.activeSelf);
-
-        // resume_blood의 호출 효과를 직접 테스트할 수 없으므로 여기서 검증을 마칩니다.
-        // 해당 로직은 실제 게임 동작 중에 시각적으로 확인해야 할 수 있습니다.
     }
 }

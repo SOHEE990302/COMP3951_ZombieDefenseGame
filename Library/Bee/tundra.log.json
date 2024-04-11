@@ -407,3 +407,12 @@
 {"msg":"enqueueNode","enqueuedNodeAnnotation":"MovedFromExtractorCombine Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll.mvfrm","enqueuedNodeIndex":336,"enqueueingNodeAnnotation":"Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll (+2 others)","enqueueingNodeIndex":324}
 {"msg":"enqueueNode","enqueuedNodeAnnotation":"WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll.mvfrm.rsp","enqueuedNodeIndex":335,"enqueueingNodeAnnotation":"MovedFromExtractorCombine Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll.mvfrm","enqueueingNodeIndex":336}
 {"msg":"enqueueNode","enqueuedNodeAnnotation":"CopyFiles Library/ScriptAssemblies/Assembly-CSharp.pdb","enqueuedNodeIndex":408,"enqueueingNodeAnnotation":"ScriptAssemblies","enqueueingNodeIndex":6}
+{"msg":"nodeRetryBuild","annotation":"Csc Library/Bee/artifacts/1900b0aE.dag/Tests.dll (+2 others)","index":234}
+{"msg":"runNodeAction","annotation":"Csc Library/Bee/artifacts/1900b0aE.dag/Tests.dll (+2 others)","displayName":"Csc Tests","index":234}
+{"msg":"noderesult","processed_node_count":404,"number_of_nodes_ever_queued":408,"annotation":"Csc Library/Bee/artifacts/1900b0aE.dag/Tests.dll (+2 others)","index":234,"exitcode":0,"outputfile":"Library\\Bee\\artifacts\\1900b0aE.dag\\Tests.dll"}
+{"msg":"inputSignatureChanged","annotation":"CopyFiles Library/ScriptAssemblies/Tests.pdb","index":382,"changes":[{"key":"FileList","value":["Library\\Bee\\artifacts\\1900b0aE.dag\\Tests.pdb"],"oldvalue":[],"dependency":"explicit"}]}
+{"msg":"runNodeAction","annotation":"CopyFiles Library/ScriptAssemblies/Tests.pdb","displayName":"Copying Tests.pdb","index":382}
+{"msg":"noderesult","processed_node_count":405,"number_of_nodes_ever_queued":408,"annotation":"CopyFiles Library/ScriptAssemblies/Tests.pdb","index":382,"exitcode":0,"outputfile":"Library\\ScriptAssemblies\\Tests.pdb"}
+{"msg":"inputSignatureChanged","annotation":"CopyFiles Library/ScriptAssemblies/Tests.dll","index":381,"changes":[{"key":"FileList","value":["Library\\Bee\\artifacts\\1900b0aE.dag\\Tests.dll"],"oldvalue":[],"dependency":"explicit"}]}
+{"msg":"runNodeAction","annotation":"CopyFiles Library/ScriptAssemblies/Tests.dll","displayName":"Copying Tests.dll","index":381}
+{"msg":"noderesult","processed_node_count":406,"number_of_nodes_ever_queued":408,"annotation":"CopyFiles Library/ScriptAssemblies/Tests.dll","index":381,"exitcode":0,"outputfile":"Library\\ScriptAssemblies\\Tests.dll"}
